@@ -1,6 +1,6 @@
 
 body{
-  font-size: 10px;
+  font-size: 20px;
   overflow-y: hidden;
 }
 
@@ -20,7 +20,7 @@ body{
       left: 10%;
       color: purple;
       text-align: center;
-      font-size: 2.3rem;
+      font-size: 3rem;
 }
 
 
@@ -217,10 +217,9 @@ body{
 
 
 .capa-bg p{
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   color: #fff;
   font-family: 'Raleway';
-  margin: 1rem 0;
 }
 
 .capa-bg{
@@ -230,15 +229,16 @@ body{
   position: absolute !important;
 }
 
-h2{
-  padding:  2rem 0;
+h1{
+  padding:  1rem 0;
   font-family: 'Raleway';
   color: #fff;
+  
 }
 
 a{
 border: 2px solid #fff;
-font-size: 1rem;
+font-size: 3rem;
 font-family: 'Raleway';
 color: #fff !important;
 padding: 1rem 2rem;
@@ -261,6 +261,6 @@ a:hover{
       left: 10%;
       color: purple;
       text-align: center;
-      font-size: 2.3rem;
+      font-size: 4.3rem;
     }
 }
