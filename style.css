@@ -1,0 +1,266 @@
+
+body{
+  font-size: 10px;
+  overflow-y: hidden;
+}
+
+
+.preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.preloader p{
+      position: absolute;
+      top: 229px;
+      font-family: 'Raleway';
+      left: 10%;
+      color: purple;
+      text-align: center;
+      font-size: 2.3rem;
+}
+
+
+.circle {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+
+.circle_green {
+  background-color: #05c196;
+  transform: translateX(13px);
+  animation: animate-green 2s linear infinite;
+}
+
+.circle_red {
+  background-color: #f01753;
+  transform: translateX(-13px);
+  animation: animate-red 2s linear infinite;
+}
+
+@keyframes animate-green {
+  0% {
+    background-color: #560e5c;
+  }
+
+  3% {
+    background-color: #560e5c;
+    transform: translateX(13px);
+  }
+  
+  9% {
+    background-color: #05c196;
+    transform: translateX(-20px);
+  }
+  
+  14% {
+    transform: translateX(2px);
+  }
+
+  18% {
+    transform: translateX(-12px);
+  }
+
+  21% {
+    transform: translateX(-3px);
+  }
+
+  23% {
+    transform: translateX(-9px);
+  }
+
+  24% {
+    transform: translateX(-7px);
+  }
+
+  30% {
+    transform: translateX(-7px) scale(1);
+    animation-timing-function: cubic-bezier(.6, 0, 1, 1);
+  }
+
+  43% {
+    z-index: -1;
+    transform: translateX(13px) scale(.6);
+    animation-timing-function: cubic-bezier(0, 0, .4, 1);
+  }
+
+  56% {
+    z-index: 1;
+    transform: translateX(33px) scale(1);
+    animation-timing-function: cubic-bezier(.6, 0, 1, 1);
+  }
+  
+  69% {
+    transform: translateX(13px) scale(1.4);
+    animation-timing-function: cubic-bezier(0, 0, .4, 1);
+  }
+
+  82% {
+    z-index: 1;
+    background-color: #05c196;
+    transform: translateX(-7px) scale(1);
+    animation-timing-function: ease-in;
+  }
+
+  98% {
+    background-color: #560e5c;
+    transform: translateX(13px);
+  }
+
+  100% {
+    background-color: #560e5c;
+  }
+}
+
+@keyframes animate-red {
+  0% {
+    background-color: #560e5c;
+  }
+
+  3% {
+    background-color: #560e5c;
+    transform: translateX(-13px);
+  }
+  
+  9% {
+    background-color: #f01753;
+    transform: translateX(20px);
+  }
+  
+  14% {
+    transform: translateX(-2px);
+  }
+
+  18% {
+    transform: translateX(12px);
+  }
+
+  21% {
+    transform: translateX(3px);
+  }
+
+  23% {
+    transform: translateX(9px);
+  }
+
+  24% {
+    transform: translateX(7px);
+  }
+
+  30% {
+    transform: translateX(7px) scale(1);
+    animation-timing-function: cubic-bezier(.6, 0, 1, 1);
+  }
+
+  43% {
+    transform: translateX(-13px) scale(1.4);
+    animation-timing-function: cubic-bezier(0, 0, .4, 1);
+  }
+
+  56% {
+    transform: translateX(-33px) scale(1);
+    animation-timing-function: cubic-bezier(.6, 0, 1, 1);
+  }
+
+  69% {
+    transform: translateX(-13px) scale(.6);
+    animation-timing-function: cubic-bezier(0, 0, .4, 1);
+  }
+
+  82% {
+    background-color: #f01753;
+    transform: translateX(7px) scale(1);
+    animation-timing-function: ease-in;
+  }
+
+  98% {
+    background-color: #560e5c;
+    transform: translateX(-13px);
+  }
+
+  100% {
+    background-color: #560e5c;
+  }
+}
+
+
+
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('fonts/Raleway-Bold.woff2') format('woff2'),
+  url('fonts/Raleway-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway-ligera';
+  src: url('fonts/Raleway-Regular.woff2') format('woff2'),
+  url('fonts/Raleway-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.img-bg{
+    background-size: cover !important;
+    height: 100vh !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important; 
+    position: relative !important;
+}
+
+
+.capa-bg p{
+  font-size: 1.2rem;
+  color: #fff;
+  font-family: 'Raleway';
+  margin: 1rem 0;
+}
+
+.capa-bg{
+  background: #0009 !important;
+  width: 100% !important;
+  height: 100vh !important;
+  position: absolute !important;
+}
+
+h2{
+  padding:  2rem 0;
+  font-family: 'Raleway';
+  color: #fff;
+}
+
+a{
+border: 2px solid #fff;
+font-size: 1rem;
+font-family: 'Raleway';
+color: #fff !important;
+padding: 1rem 2rem;
+transition: 0.5s;
+text-transform: uppercase;
+text-decoration: none !important; 
+}
+
+a:hover{
+  background: #fff;
+  color: purple !important;
+  transition: 0.5s;
+}
+
+@media (max-width: 600px) {
+  .preloader p{
+      position: absolute;
+      top: 229px;
+      font-family: 'Raleway';
+      left: 10%;
+      color: purple;
+      text-align: center;
+      font-size: 2.3rem;
+    }
+}
