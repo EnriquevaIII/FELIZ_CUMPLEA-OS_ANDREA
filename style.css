@@ -15,9 +15,9 @@ body{
 
 .preloader p{
       position: absolute;
-      top: 229px;
+      top: 100px;
       font-family: 'Raleway';
-      left: 10%;
+      left: 32%;
       color: purple;
       text-align: center;
       font-size: 3rem;
@@ -229,16 +229,16 @@ body{
   position: absolute !important;
 }
 
-h1{
-  padding:  1rem 0;
+.titulo{
+  margin: 5rem 0;
   font-family: 'Raleway';
   color: #fff;
-  
+  font-size: 3.5rem;
 }
 
 a{
 border: 2px solid #fff;
-font-size: 3rem;
+font-size: 2rem;
 font-family: 'Raleway';
 color: #fff !important;
 padding: 1rem 2rem;
